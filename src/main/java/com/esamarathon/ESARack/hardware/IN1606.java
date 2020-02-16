@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 import com.esamarathon.ESARack.hardware.enums.AutoImageType;
 
 /**
- * Byta inputs, croppa, justera bilden i höjd/sidled
+ * Implementation for controlling a Extron IN1606.
  * @author zephyyrr
  *
  */

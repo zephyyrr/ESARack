@@ -20,7 +20,7 @@ public class Extron {
 		return ConnectAndSendCommandToExtronUnit(this.ip, this.port, command);
 	}
 
-	public String ConnectAndSendCommandToExtronUnit(String IP, int port, String command)
+	private String ConnectAndSendCommandToExtronUnit(String IP, int port, String command)
 			throws IOException, InterruptedException {
 		Socket socket = null;
 		PrintWriter out = null;

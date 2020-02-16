@@ -8,10 +8,7 @@ import com.esamarathon.ESARack.hardware.enums.VP50Inputs;
 import jssc.*;
 
 /**
- * VP50 är den som ska ändras på minst
- * Byta inputs [Must]
- * Recall presets [Nice to have](edited)
- * Det är den enda som VP50 ska behöva göra
+ * Implementation for controlling a iScan VP50
  * 
  * @author zephyyrr
  *

@@ -29,7 +29,7 @@ public class Crosspoint extends Extron implements PresetSwitch {
 		String sPreset = Integer.toString(preset);
 		String command = sPreset + ".";
 		
-		this.ConnectAndSendCommandToExtronUnit(this.ip, this.port, command);
+		ConnectAndSendCommand(command);
 		this.preset = preset;
 		
 	}
@@ -46,7 +46,7 @@ public class Crosspoint extends Extron implements PresetSwitch {
 
 	public void clearAllTies() throws IOException, InterruptedException {
 		logger.info("Clearing all ties.");
-		this.ConnectAndSendCommandToExtronUnit(this.ip, this.port, "0*!");
+		ConnectAndSendCommand("0*!");
 		logger.fine("Cleared all ties.");
 		
 	}
@@ -65,7 +65,7 @@ public class Crosspoint extends Extron implements PresetSwitch {
 			command = in + "*" + out + bindingType.GetCrosspointBindingType();
 			logger.info("Extron Command: " + command);
 			
-			this.ConnectAndSendCommandToExtronUnit(this.ip, this.port, command);		
+			ConnectAndSendCommand(command);		
 		}
 		
 	}
